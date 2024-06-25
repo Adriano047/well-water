@@ -1,0 +1,71 @@
+* {
+    margin: 0px;
+    text-decoration: none;
+    color: white;
+    font-family: Helvetica;
+}
+h1 {
+    font-size: 30px;
+}
+/* Estilo do menu */
+.nav-flex{
+    font-size: larger;
+    background-color: #150E60;
+    padding: 20px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.item-flex {
+    display: flex;
+    gap: 120px;
+}
+/*  Estilo das sections */
+.DarkBlue{
+    background-color: #150E60;
+    height: 20rem;
+}
+.lightBlue {
+    background-color: #235891;
+    height: 20rem;
+}
+/* Estido da header */
+header {
+    background-image: url(/imgs/Bebendo.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+.Well { 
+    font-size: 4rem;
+    margin-right: 110px;
+}
+.Water { 
+    font-size: 4rem;
+    margin-bottom: 40px;
+    margin-left: 90px;
+}
+header button{
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+/* estilo da seção planos */
+.Planos-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.Planos {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
