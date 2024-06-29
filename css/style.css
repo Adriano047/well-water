@@ -4,13 +4,29 @@
     color: white;
     font-family: Helvetica;
 }
+body {
+    background-color: #150E60;
+}
 h1 {
     font-size: 30px;
+}
+.SetaDeRetorno {
+    position: fixed;
+    bottom: 30px;
+    font-size: 80px;
+    right: 3%;
+    z-index: 100;
+    bottom: 20px;
+    right: 60px; 
+    transform: translateY(0); 
+    transition: transform 1s ease; 
+}
+.SetaDeRetorno:hover  {
+    transform: translateY(-50px)
 }
 /* Estilo do menu */
 .nav-flex{
     font-size: larger;
-    background-color: #150E60;
     /* padding: 20px;
     max-width: 100%;
     display: flex;
@@ -22,30 +38,18 @@ h1 {
 }  */
 /*  Estilo das sections */
 .DarkBlue{
-    background-color: #150E60;
-    height: 20rem;
+    height: 480px;
 }
 .lightBlue {
     background-color: #235891;
-    height: 20rem;
-}
-/* Estido da header */
-header {
-    background-image: url(/imgs/Bebendo.jpg);
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    flex-direction: column;
+    height: 480px;
 }
 .Well { 
-    font-size: 4rem;
+    font-size: 7rem;
     margin-right: 110px;
 }
 .Water { 
-    font-size: 4rem;
+    font-size: 7rem;
     margin-bottom: 40px;
     margin-left: 90px;
 }
@@ -56,6 +60,9 @@ header {
     padding: 5px 15px;
     cursor: pointer;
     margin-bottom: 30px;
+}
+.btn-cadastrar:hover{
+    scale: 1.1;
 }
 /* estilo da seção planos */
 .Planos-section {
@@ -68,4 +75,15 @@ header {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+}
+.Tabela-Preco:hover {
+    border: 2px solid white;
+}
+.list-unstyled li {
+    border-bottom: solid 1px;
+    margin-bottom: 10px;
+}
+i:hover {
+    scale: 1.2;
+    cursor: pointer;
 }
