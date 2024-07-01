@@ -39,10 +39,10 @@ body {
 .DarkBlue{
     height: 480px;
 }
-.lightBlue {
+/* .lightBlue {
     background-color: #235891;
     height: 480px;
-}
+} */
 .Well { 
     font-size: 140pt;
     line-height: 80%;
@@ -66,6 +66,36 @@ body {
 .btn-cadastrar:hover{
     scale: 1.1;
 }
+
+#speakers {
+    background-color: #CFE6FF;
+    /* height: max-content; */
+}
+
+#titulo-speakers {
+    font-size: 60pt;
+    color: #150E60;
+}
+
+.speakers-item {
+    height: 350px;
+    width: 250px;
+}
+
+.speakers-item img {
+    border-radius: 20%;
+}
+
+.speakers-item h3 {
+    font-size: 15pt;
+    color: #150E60;
+}
+
+.speakers-item p {
+    font-size: 9pt;
+    color: #150E60;
+}
+
 /* estilo da seção planos */
 .Planos-section {
     display: flex;
