@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Agrandir';
+    src: local('Agrandir'), url(../fonts/Agrandir-Regular.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Agrandir Bold';
+    src: local('Agrandir Bold'), url(../fonts/Agrandir-TextBold.otf) format('truetype');
+}
+
+.ff-agrandir {
+    font-family: 'Agrandir';
+}
+
+.ff-agrandir-bold {
+    font-family: 'Agrandir Bold';
+}
