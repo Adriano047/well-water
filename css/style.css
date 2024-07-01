@@ -4,12 +4,11 @@
     color: white;
     font-family: Helvetica;
 }
+
 body {
-    background-color: #150E60;
+    background-color: #353EE5;
 }
-h1 {
-    font-size: 30px;
-}
+
 .SetaDeRetorno {
     position: fixed;
     bottom: 30px;
@@ -45,13 +44,16 @@ h1 {
     height: 480px;
 }
 .Well { 
-    font-size: 7rem;
-    margin-right: 110px;
+    font-size: 140pt;
+    line-height: 80%;
+    /* margin-right: 110px; */
 }
+
 .Water { 
-    font-size: 7rem;
-    margin-bottom: 40px;
-    margin-left: 90px;
+    font-size: 140pt;
+    line-height: 80%;
+    /* margin-bottom: 40px; */
+    /* margin-left: 90px; */
 }
 .btn-cadastrar{
     background-color: transparent;
