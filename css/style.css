@@ -23,33 +23,23 @@ body {
 .SetaDeRetorno:hover  {
     transform: translateY(-50px)
 }
-/* Estilo do menu */
+
 .nav-flex{
     font-size: larger;
 }
-.slider-img {
-    background-size: cover;
-    background-position: center;
-}
-/*  Estilo das sections */
+
 .DarkBlue{
     height: 480px;
 }
-/* .lightBlue {
-    background-color: #235891;
-    height: 480px;
-} */
+
 .Well { 
     font-size: 140pt;
     line-height: 80%;
-    /* margin-right: 110px; */
 }
 
 .Water { 
     font-size: 140pt;
     line-height: 80%;
-    /* margin-bottom: 40px; */
-    /* margin-left: 90px; */
 }
 .btn-cadastrar{
     background-color: transparent;
@@ -66,7 +56,6 @@ body {
 /* -------------------------------------------------- */
 #speakers {
     background-color: #CFE6FF;
-    /* height: max-content; */
 }
 
 #titulo-speakers {
@@ -115,6 +104,18 @@ body {
 }
 
 /* -------------------------------------------------- */
+
+#conscientizacao {
+    background-color: #CFE6FF;
+}
+
+#titulo-conscientizacao {
+    font-size: 40pt;
+    color: #150E60;   
+}
+
+
+
 /* estilo da seção planos */
 .Planos-section {
     display: flex;
@@ -153,9 +154,6 @@ i:hover {
 .div-img h5 {
     border-top: solid black 1px;
 }
-.container {
-    position: relative;
-}
 
 .descricaoProjeto {
     width: 280px;
@@ -163,7 +161,7 @@ i:hover {
     top: 5;
     left: 5;
     position: absolute;
-    background: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.556);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,4 +197,8 @@ i:hover {
 
 .estiloProjeto {
     border-radius: 10px;
+}
+
+.estiloProjeto {
+    background-color: rgba(0, 0, 0, 0.505);
 }
