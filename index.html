@@ -34,7 +34,8 @@
 
     <main>
         <section>
-            <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" height="500px">
+            <!-- Remover data-bs-ride="carousel" pro carrosel ficar parado -->
+            <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="" height="500px">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" class="active" aria-current="true"
@@ -96,7 +97,7 @@
             </div>
         </section>
 
-        <section id="speakers" class="lightBlue container-fluid p-5 text-center">
+        <section id="speakers" class="container-fluid p-5 text-center">
             <h2 id="titulo-speakers" class="ff-agrandir-bold mb-5">SPEAKERS</h2>
 
             <div class="d-flex justify-content-center gap-5">
@@ -120,12 +121,71 @@
             </div>
         </section>
 
-        <section id="planos" class="DarkBlue Planos-section">
-            <h2>
-                Nossos Planos e Serviços
-            </h2>
-            <div class="d-flex">
-                <div class="Tabela-Preco d-flex flex-column align-items-center p-4">
+        <section id="planos" class="container-fluid p-5 text-center">
+            <h2 id="titulo-planos" class="ff-agrandir-bold mb-5">NOSSOS PLANOS E SERVIÇOS</h2>
+            <div class="d-flex justify-content-center gap-3">
+                <div class="plano p-2">
+                    <div class="mb-4">
+                        <h2 class="ff-agrandir-bold nome-plano">ESSENCIAL</h2>
+                        <h2 class="ff-agrandir-bold valor-plano">R$ 15,00</h2>
+                    </div>
+
+                    <div>
+                        <div class="fw-light">10 m³ (10.000 litros) por mês</div>
+                        <div class="fw-bold">Capacidade de Fornecimento</div>
+                        <hr>
+                        <div class="fw-light">R$ 5,00 por m³ adicional</div>
+                        <div class="fw-bold">Multa por Excesso de Uso</div>
+                        <hr>
+                        <div class="fw-light">5% de desconto para uso abaixo de 8 m³ por mês</div>
+                        <div class="fw-bold">Desconto por Uso Eficiente</div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="plano p-2">
+                    <div class="mb-4">
+                        <h2 class="ff-agrandir-bold nome-plano">SUSTENTÁVEL</h2>
+                        <h2 class="ff-agrandir-bold valor-plano">R$ 20,00</h2>
+                    </div>
+
+                    <div>
+                        <div class="fw-light">20 m³ (20.000 litros) por mês</div>
+                        <div class="fw-bold">Capacidade de Fornecimento</div>
+                        <hr>
+                        <div class="fw-light">R$ 4,00 por m³ adicional</div>
+                        <div class="fw-bold">Multa por Excesso de Uso</div>
+                        <hr>
+                        <div class="fw-light">8% de desconto para uso abaixo de 18 m³ por mês.</div>
+                        <div class="fw-bold">Desconto por Uso Eficiente</div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="plano p-2">
+                    <div class="mb-4">
+                        <h2 class="ff-agrandir-bold nome-plano">PREMIUM</h2>
+                        <h2 class="ff-agrandir-bold valor-plano">R$ 40,00</h2>
+                    </div>
+
+                    <div>
+                        <div class="fw-light">50 m³ (50.000 litros) por mês</div>
+                        <div class="fw-bold">Capacidade de Fornecimento</div>
+                        <hr>
+                        <div class="fw-light">R$ 3,00 por m³ adicional</div>
+                        <div class="fw-bold">Multa por Excesso de Uso</div>
+                        <hr>
+                        <div class="fw-light">12% de desconto para uso abaixo de 45 m³ por mês.</div>
+                        <div class="fw-bold">Desconto por Uso Eficiente</div>
+                        <hr>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- <div class="Tabela-Preco d-flex flex-column align-items-center p-4">
                     <div class="fs-3">Básico</div>
                     <div class="fs-3">R$15,00</div>
                     <div class="text-center fs-6">
@@ -157,7 +217,7 @@
                             <li>Lorem ipsum dolor sit amet.</li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 

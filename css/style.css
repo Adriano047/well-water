@@ -67,6 +67,7 @@ body {
     scale: 1.1;
 }
 
+/* -------------------------------------------------- */
 #speakers {
     background-color: #CFE6FF;
     /* height: max-content; */
@@ -96,6 +97,28 @@ body {
     color: #150E60;
 }
 
+/* -------------------------------------------------- */
+#planos {
+    background-color: #473DC6;
+}
+
+#titulo-planos {
+    font-size: 50pt;
+}
+
+.plano {
+    width: 400px;
+}
+
+.nome-plano {
+    font-size: 12pt;
+}
+
+.valor-plano {
+    font-size: 42pt;
+}
+
+/* -------------------------------------------------- */
 /* estilo da seção planos */
 .Planos-section {
     display: flex;
