@@ -258,23 +258,23 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="signupForm" method="get" onsubmit="return validateForm()">
-                        <div class="form-group">
+                    <form id="signupForm" class="row" method="get" onsubmit="return validateForm()">
+                        <div class="col-6 mb-3 form-group">
                             <label class="text-black" for="Nome">Nome Completo:</label>
                             <input type="text" class="form-control" id="Nome" placeholder="Informe seu nome completo"
                                 required>
                         </div>
-                        <div class="form-group">
+                        <div class="col-6 mb-3 form-group">
                             <label class="text-black" for="Email">Email:</label>
                             <input type="email" class="form-control" id="Email" placeholder="Ex: Fulano@gmail.com"
                                 required>
                         </div>
-                        <div class="form-group">
+                        <div class="col-12 mb-3 form-group">
                             <label class="text-black" for="Senha">Senha:</label>
                             <input type="password" class="form-control" id="Senha" placeholder="Digite uma Senha"
                                 required>
                         </div>
-                        <div class="form-group">
+                        <div class="col-12 mb-3 form-group">
                             <label class="text-black" for="ConfSenha">Confirmar Senha:</label>
                             <input type="password" class="form-control" id="ConfSenha" placeholder="Digite-a novamente"
                                 required>
