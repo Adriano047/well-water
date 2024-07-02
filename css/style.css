@@ -4,50 +4,42 @@
     color: white;
     font-family: Helvetica;
 }
-h1 {
-    font-size: 30px;
+
+body {
+    background-color: #353EE5;
 }
-/* Estilo do menu */
+
+.SetaDeRetorno {
+    position: fixed;
+    bottom: 30px;
+    font-size: 80px;
+    right: 3%;
+    z-index: 100;
+    bottom: 20px;
+    right: 60px; 
+    transform: translateY(0); 
+    transition: transform 1s ease; 
+}
+.SetaDeRetorno:hover  {
+    transform: translateY(-50px)
+}
+
 .nav-flex{
     font-size: larger;
-    background-color: #150E60;
-    /* padding: 20px;
-    max-width: 100%;
-    display: flex;
-    justify-content: space-between; */
 }
-/* .item-flex {
-    display: flex;
-    gap: 120px;
-}  */
-/*  Estilo das sections */
+
 .DarkBlue{
-    background-color: #150E60;
-    height: 20rem;
+    height: 480px;
 }
-.lightBlue {
-    background-color: #235891;
-    height: 20rem;
-}
-/* Estido da header */
-header {
-    background-image: url(/imgs/Bebendo.jpg);
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    flex-direction: column;
-}
+
 .Well { 
-    font-size: 4rem;
-    margin-right: 110px;
+    font-size: 140pt;
+    line-height: 80%;
 }
+
 .Water { 
-    font-size: 4rem;
-    margin-bottom: 40px;
-    margin-left: 90px;
+    font-size: 140pt;
+    line-height: 80%;
 }
 .btn-cadastrar{
     background-color: transparent;
@@ -57,6 +49,73 @@ header {
     cursor: pointer;
     margin-bottom: 30px;
 }
+.btn-cadastrar:hover{
+    scale: 1.1;
+}
+
+/* -------------------------------------------------- */
+#speakers {
+    background-color: #CFE6FF;
+}
+
+#titulo-speakers {
+    font-size: 60pt;
+    color: #150E60;
+}
+
+.speakers-item {
+    height: 350px;
+    width: 250px;
+}
+
+.speakers-item img {
+    border-radius: 20%;
+}
+
+.speakers-item h3 {
+    font-size: 15pt;
+    color: #150E60;
+}
+
+.speakers-item p {
+    font-size: 9pt;
+    color: #150E60;
+}
+
+/* -------------------------------------------------- */
+#planos {
+    background-color: #473DC6;
+}
+
+#titulo-planos {
+    font-size: 50pt;
+}
+
+.plano {
+    width: 400px;
+}
+
+.nome-plano {
+    font-size: 12pt;
+}
+
+.valor-plano {
+    font-size: 42pt;
+}
+
+/* -------------------------------------------------- */
+
+#conscientizacao {
+    background-color: #CFE6FF;
+}
+
+#titulo-conscientizacao {
+    font-size: 40pt;
+    color: #150E60;   
+}
+
+
+
 /* estilo da seção planos */
 .Planos-section {
     display: flex;
@@ -68,4 +127,82 @@ header {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+}
+.Tabela-Preco:hover {
+    border: 2px solid white;
+}
+.list-unstyled li {
+    border-bottom: solid 1px;
+    margin-bottom: 10px;
+}
+i:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.div-img {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    
+    background-size: cover;
+    background-position: center;
+    width: 280px;
+    height: 350px;
+    border-radius: 10px;
+}
+.div-img h5 {
+    border-top: solid black 1px;
+}
+
+.descricaoProjeto {
+    width: 280px;
+    height: 300px;
+    top: 5;
+    left: 5;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.556);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+
+.container:hover .descricaoProjeto {
+    opacity: 1;
+}
+
+.descricaoProjeto h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.descricaoProjeto p {
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.descricaoProjeto > * {
+    transform: translateY(25px);
+    transition: transform 0.6s;
+}
+
+.container:hover .descricaoProjeto > * {
+    transform: translateY(0px);
+}
+
+.estiloProjeto {
+    border-radius: 10px;
+}
+
+.estiloProjeto {
+    background-color: rgba(0, 0, 0, 0.505);
+}
+
+#rodape {
+    background-color: #150E60;
 }
