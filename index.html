@@ -16,7 +16,7 @@
 <body>
     <header id="cabecalho">
         <div class="SetaDeRetorno">
-            <a class="text-light text-decoration-none" href="#cabecalho"><p style="color: rgba(0, 0, 255, 0.781)">↑</p></a>
+            <a class="text-light text-decoration-none" href="#cabecalho"><p style="color: gray">↑</p></a>
         </div>
         <nav class="nav-flex d-flex justify-content-between py-3 px-5">
             <div>
@@ -257,7 +257,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="signupForm" class="row" method="get" onsubmit="return validateForm()">
+                    <form id="signupForm" class="row" method="get" onsubmit="validateForm(event)">
                         <div class="col-6 mb-3 form-group">
                             <label class="text-black" for="Nome">Nome Completo:</label>
                             <input type="text" class="form-control" id="Nome" placeholder="Informe seu nome completo"
@@ -288,19 +288,36 @@
     </div>
 
     <script>
-        function validateForm() {
+        function validateForm(event) {
             let form = document.getElementById('signupForm');
-            let Senha = document.getElementById('Senha').value
-            let ConfSenha = document.getElementById('ConfSenha').value
-
+            let Senha = document.getElementById('Senha').value;
+            let ConfSenha = document.getElementById('ConfSenha').value;
+        
             if (!form.checkValidity() || Senha !== ConfSenha) {
+                if (Senha !== ConfSenha) {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Senhas Diferentes",
+                        text: "Senha e Confirmar senha não são iguais",
+                    });
+                }
                 event.preventDefault();
                 event.stopPropagation();
+            } else {
+                event.preventDefault();
+                Swal.fire({
+                    position: "top-center",
+                    icon: "success",
+                    title: "Tudo Certo",
+                    showConfirmButton: false,
+                    timer: 1200
+                }).then(() => {
+                    form.submit();
+                });
             }
-            return form.checkValidity();
-
         }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
